@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>carousel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="myCarousel">
+        <div id="indicatorBtn"></div>
+        <div class="btn prev-btn"></div>
+        <ul class="pictures-list">
+            <li class="picture-item" id="0"><a href="#"><img src="img/lichun.jpg" alt="立春"/><!--<div class="caption">立春是从天文上来划分的，自然界在人们的心目中，春是温暖，鸟语花香；</div>--></a></li>
+            <li class="picture-item" id="1"><a href="#"><img src="img/chunfen.jpg" alt="春分"/><!--<div class="caption">春分这一天阳光直射赤道，全球昼夜几乎相等。</div>--></a></li>
+            <li class="picture-item" id="2"><a href="#"><img src="img/qingming.jpg" alt="清明"/><!--<div class="caption">春分这一天阳光直射赤道，全球昼夜几乎相等。</div>--></a></li>
+            <li class="picture-item" id="3"><a href="#"><img src="img/lixia.jpg" alt="立夏"/><!--<div class="caption">立夏表示即将告别春天，是夏日天的开始。</div>--></a></li>
+            <li class="picture-item" id="4"><a href="#"><img src="img/xiazhi.jpg" alt="夏至"/><!--<div class="caption">夏至这天，太阳运行至黄经90度，太阳直射地面的位置到达一年的最北端。</div>--></a></li>
+            <li class="picture-item" id="5"><a href="#"><img src="img/liqiu.jpg" alt="立秋"/><!--<div class="caption">立秋，是农历二十四节气中的第13个节气，更是秋天的第一个节气，标志着孟秋时节的正式开始</div>--></a></li>
+            <li class="picture-item" id="6"><a href="#"><img src="img/qiufen.jpg" alt="秋分"/><!--<div class="caption">太阳在这一天到达黄经180度，直射地球赤道，因此地球绝大部分地区这一天24小时昼夜均分，各12小时。</div>--></a></li>
+            <li class="picture-item" id="7"><a href="#"><img src="img/lidong.jpg" alt="立冬"/><!--<div class="caption">立冬过后，日照时间将继续缩短，正午太阳高度继续降低。</div>--></a></li>
+            <li class="picture-item" id="8"><a href="#"><img src="img/dongzhi.jpg" alt="冬至"/><!--<div class="caption">冬至，是中国农历中一个重要的节气，冬至俗称“数九、冬节”、“长至节”、“亚岁”等。</div>--></a></li>
+        </ul>
+        <div class="btn next-btn"></div>
+    </div>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script>
+        $(function () {
+            var options={
+                "speed":500,
+                "interval": 3000
+            };
+            $('#myCarousel').myCarousel(options);
+        });
+    </script>
+</body>
+</html>
